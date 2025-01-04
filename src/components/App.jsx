@@ -12,7 +12,7 @@ function App() {
 
     setContact((prevValue) => {
       if (name === "fName") {
-        return {
+        return { value = {contact.fName}
           fName: value,
           lName: prevValue.lName,
           email: prevValue.email,
@@ -40,9 +40,9 @@ function App() {
       </h1>
       <p>{contact.email}</p>
       <form>
-        <input onChange={handleChange} name="fName" placeholder="First Name" />
-        <input onChange={handleChange} name="lName" placeholder="Last Name" />
-        <input onChange={handleChange} name="email" placeholder="Email" />
+        <input onChange={handleChange} value = {contact.fName} name="fName" placeholder="First Name" />
+        <input onChange={handleChange} value = {contact.lName} name="lName" placeholder="Last Name" />
+        <input onChange={handleChange} value = {contact.email} name="email" placeholder="Email" />
         <button>Submit</button>
       </form>
     </div>
