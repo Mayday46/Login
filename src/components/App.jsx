@@ -18,9 +18,17 @@ function App() {
           email: prevValue.email,
         };
       } else if (name === "lName") {
-        return {};
+        return {
+          fName: prevValue.fName,
+          lName: value,
+          email: prevValue.email,
+        };
       } else if (name === "email") {
-        return {};
+        return {
+          fName: prevValue.fName,
+          lName: prevValue.lName,
+          email: value,
+        };
       }
     });
   }
